@@ -7,7 +7,7 @@ let heroi = {
   }
 
 let chanceVitoria = 0.7
-let chanceVitoriaBoss = 0.5
+let chanceVitoriaBoss = 0.2
 
 function IniciarJogo(){
     document.getElementById("telaInicio").style.display = "none";

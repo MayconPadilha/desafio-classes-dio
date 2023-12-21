@@ -1,6 +1,6 @@
-#Acesse Online aqui: https://desafio-classificador-dio.vercel.app/
+#Acesse Online aqui: https://desafio-classes-dio.vercel.app/
 
-Para esse desafio, fui além, utilizando outras habilidades que já possuía e aprimorando ainda mais meus conhecimentos na área. Em vez de utilizar apenas o console, preferi criar uma interface com um "mini jogo" onde cada batalha ganhamos e perdemos XP, assim adquirindo uma Classificação do herói.
+Para esse desafio, fui além, utilizando outras habilidades que já possuía e aprimorando ainda mais meus conhecimentos na área. Em vez de utilizar apenas o console, preferi criar uma interface com um "mini jogo" onde cada batalha ganhamos ou perdemos.
 
 # 3️⃣ Escrevendo as classes de um Jogo
 
@@ -10,21 +10,32 @@ Para esse desafio, fui além, utilizando outras habilidades que já possuía e a
 - Operadores
 - Laços de repetição
 - Estruturas de decisões
+- Funções
+- Classes e Objetos
 
 ## Objetivo
 
-Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de um herói, depois utilize uma estrutura de decisão para apresentar alguma das mensagens abaixo:
+Crie uma classe generica que represente um herói de uma aventura e que possua as seguintes propriedades:
 
-- Se XP for menor do que 1.000 = Ferro
-- Se XP for entre 1.001 e 2.000 = Bronze
-- Se XP for entre 2.001 e 5.000 = Prata
-- Se XP for entre 6.001 e 7.000 = Ouro
-- Se XP for entre 7.001 e 8.000 = Platina
-- Se XP for entre 8.001 e 9.000 = Ascendente
-- Se XP for entre 9.001 e 10.000= Imortal
-- Se XP for maior ou igual a 10.001 = Radiante
+- nome
+- idade
+- tipo (ex: guerreiro, mago, monge, ninja )
+
+além disso, deve ter um método chamado atacar que deve atender os seguientes requisitos:
+
+- exibir a mensagem: "o {tipo} atacou usando {ataque}"
+- aonde o {tipo} deve ser concatenando o tipo que está na propriedade da classe
+- e no {ataque} deve seguir uma descrição diferente conforme o tipo, seguindo a tabela abaixo:
+
+se mago -> no ataque exibir (usou magia)
+se guerreiro -> no ataque exibir (usou espada)
+se monge -> no ataque exibir (usou artes marciais)
+se ninja -> no ataque exibir (usou shuriken)
 
 ## Saída
 
 Ao final deve se exibir uma mensagem:
-"O Herói de nome **{nome}** está no nível de **{nivel}**"
+
+- "o {tipo} atacou usando {ataque}"
+  ex: mago atacou usando magia
+  guerreiro atacou usando espada
