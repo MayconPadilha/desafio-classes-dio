@@ -38,7 +38,7 @@ function IniciarJogo(){
     exibirVida();
 
     let apresentacao = document.getElementById("apresentacao");
-    apresentacao.innerHTML = `<p>Seja Bem-vindo Herói ${heroi[0]}</p>`
+    apresentacao.innerHTML = `<p>Seja Bem-vindo Herói ${heroi.nome}</p>`
 }
 
 function exibirDados(){
